@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: #416FEC;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  position: relative;
+  font-size: 30px;
+  color: white;
+} 
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.list li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list li div {
+  font-size: 24px;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 12px;
+  background-color: #416FEC;
+  color: white;
+  text-align: center;
 }
