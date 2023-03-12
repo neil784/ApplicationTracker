@@ -19,7 +19,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/create">
-                                <div>Add Card</div>
+                                <div>Create Card</div>
                             </Link>
                         </li>
                     </ul>

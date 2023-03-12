@@ -44,6 +44,50 @@
   color: white;
 }
 
+/* TEST AREA */
+.create-container {
+  position: relative;
+  min-height: 79vh;
+  /* padding-bottom: 5vh; */
+  padding-top: 5vh;
+  background-color: #416FEC;
+}
+
+.form-container, .create-form-container, .updelete-form-container {
+  width: 360px; 
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+
+.register-form, .create-register-form, .updelete-register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.form-field, .create-form-field, .updelete-form-field, .create-select-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.btn {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  text-align: center;
+  background-color: #FCCB06;
+  color: black;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
 /* FOOTER */
 
 .footer {
