@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+  padding-left: 200px;
+  padding-right: 100px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: #416FEC;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h1 {
+  position: relative;
+  font-size: 30px;
+  color: white;
+} 
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.list li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list li div {
+  font-size: 24px;
+  color: white;
+}
+
+/* LOADING, SPLASHSCREEN, NOCARD */
+
+.loading-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  min-height: 79vh;
+  background-color: #416FEC;
+  color: white;
+  font-size: 36px;
+}
+
+.splashscreen-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  min-height: 79vh;
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 36px;
+}
+
+.no-card-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  min-height: 79vh;
+  background-color: white;
+  color: black;
+  font-size: 36px;
+}
+
+/* HOME */
+
+.home-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  min-height: 79vh;
+}
+
+.home-intro {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.home-titles {
+  font-weight: bold;
+  font-size: 32px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.home-statuses {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.home-arrow {
+  background-image: url('../public/arrow.png');
+  background-size: 20%;
+  background-repeat: no-repeat;
+}
+
+.home-fab {
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  bottom: 60px;
+  right: 20px;
+  z-index: 999;
+  background-color: #FCCB06;
+  border-radius: 40px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-fab:hover {
+  cursor: pointer;
+}
+
+.home-fab-plus {
+  font-size: 80px;
+  color: black;
+  height: 95px;
+}
+
+/* CARD */
+
+.card-offer {
+  width: 75vh;
+  padding: 3px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: white;
+  color:black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 40px;
+  background-color: green;
+}
+
+.card-in-progress {
+  width: 75vh;
+  padding: 3px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: white;
+  color:black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 40px;
+  background-color: yellow;
+}
+
+.card-rejected {
+  width: 75vh;
+  padding: 3px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: white;
+  color:black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: 40px;
+  background-color: red;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  gap: 10px;
+}
+
+.card-company {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+.card-position, .card-dateApplied, .card-salary, .card-notes, .card-status {
+  font-style: normal;
+}
+
+/* CREATE, EDIT, DELETE, SIGNUP, LOGIN */
+
+ .signup-container, .login-container {
+  position: relative;
+  min-height: 79vh;
+  background-color: #416FEC;
+  padding-top: 5vh;
+}
+
+.create-container {
+  position: relative;
+  min-height: 79vh;
+  background-color: #416FEC;
+  padding-bottom: 1.7vh;
+}
+
+.edit-container {
+  position: relative;
+  min-height: 79vh;
+  background-color: #416FEC;
+  padding-bottom: 5vh;
+}
+
+.create-form-container, .edit-form-container, .delete-form-container, .signup-form-container, .login-form-container {
+  width: 360px; 
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+
+.create-register-form, .edit-register-form, .delete-register-form, .signup-register-form, .login-register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.create-form-field, .create-select-field, .edit-form-field, .edit-select-field, .signup-form-field, .login-form-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.create-btn, .edit-btn, .delete-btn, .signup-btn, .login-btn {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  text-align: center;
+  background-color: #FCCB06;
+  color: black;
+}
+
+.create-btn:hover, .edit-btn:hover, .delete-btn, .signup-btn, .login-btn {
+  cursor: pointer;
+}
+
+/* SIGNUP */
+
+
+
+/* FOOTER */
+
+.footer {
+  padding: 12px;
+  background-color: #416FEC;
+  color: white;
+  text-align: center;
+}

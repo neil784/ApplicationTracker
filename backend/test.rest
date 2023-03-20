@@ -1,0 +1,68 @@
+### GET ALL
+GET http://localhost:4000/api/applications/
+
+### GET ONE
+GET http://localhost:4000/api/applications/6410da52d5c7973bf4b5c7cf
+
+### POST ONE
+POST http://localhost:4000/api/applications/
+Content-Type: application/json
+
+{
+    "userid": "641382bc04e524218c653c7a",
+    "company": "Apple",
+    "position": "Software Engineer Intern",
+    "dateApplied": "10/16/2022",
+    "salary": "$36/hr",
+    "notes": "",
+    "status": "Application Submitted"
+}
+
+### PUT ONE
+PUT http://localhost:4000/api/applications/641105ca69d2941f741d371b
+Content-Type: application/json
+
+{
+    "company": "Apple",
+    "position": "Software Engineer Intern",
+    "dateApplied": "10/16/2022",
+    "salary": "$36/hr",
+    "notes": "",
+    "status": "Application Submitted"
+}
+
+### DELETE ONE
+DELETE http://localhost:4000/api/applications/6413c58281b0104fe43b9fa3
+Content-Type: application/json
+
+{
+    "userid": "641382bc04e524218c653c7a"
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+
+### GET ALL
+GET http://localhost:4000/api/users/
+
+### POST ONE (signup)
+POST http://localhost:4000/api/users/
+Content-Type: application/json
+
+{
+    "firstname": "Neil",
+    "lastname": "Prabhu",
+    "email": "neil@gmail.com",
+    "password": "1234"
+}
+
+### PUT ONE (login)
+PUT http://localhost:4000/api/users/
+Content-Type: application/json
+
+{
+    "email": "neil@gmail.com",
+    "password": "1234"
+}
+
+### DELETE ONE
+DELETE http://localhost:4000/api/users/6413d20f9ebd381b3c207289

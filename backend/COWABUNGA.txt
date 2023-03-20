@@ -1,0 +1,10 @@
+npm install - to install dependencies (one time only)
+npm start - to start server
+
+create new mongodb Atlas cluster
+add connection link to secrets.js
+uncomment line 15 in server.js
+
+In MongoDB Atlas, Network Access should be set allow from anywhere.
+In Database Access edit->Built-in Role->Read and write to any database 
+should be set.
